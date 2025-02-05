@@ -25,5 +25,14 @@
 1-5.o: 1-5.c
 	gcc -c 1-5.c
 
+1-6: 1-6.exe
+	./1-6.exe
+
+1-6.exe: 1-6.o
+	gcc -o 1-6.exe 1-6.o
+
+1-6.o: 1-6.c
+	gcc -c 1-6.c
+
 clean:
 	rm *.exe *.o

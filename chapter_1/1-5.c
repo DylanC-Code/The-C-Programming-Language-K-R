@@ -5,8 +5,8 @@ for fahr = 0, 20, ..., 300; floating-point version */
 main()
 {
     int celsius;
-
-    printf("Celsius-Fahrenheit Table \n\n");
+ 
+    printf("Celsius- Table \n\n");
 
     for (celsius = 300; celsius >= 0; celsius -= 20)
     {
