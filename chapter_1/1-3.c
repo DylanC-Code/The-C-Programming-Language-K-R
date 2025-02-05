@@ -12,8 +12,7 @@ main()
     step = 20;   /* step size */
     fahr = lower;
 
-    printf("Celsius Fahrenheit Table \n");
-    printf("C\tF\n\n");
+    printf("Fahrenheit-Celsius Table \n");
 
     while (fahr <= upper)
     {
