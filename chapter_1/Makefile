@@ -52,5 +52,14 @@
 1-8.o: 1-8.c
 	gcc -c 1-8.c
 
+1-9: 1-9.exe
+	./1-9.exe
+
+1-9.exe: 1-9.o
+	gcc -o 1-9.exe 1-9.o
+
+1-9.o: 1-9.c
+	gcc -c 1-9.c
+
 clean:
 	rm *.exe *.o
