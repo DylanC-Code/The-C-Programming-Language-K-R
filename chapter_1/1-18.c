@@ -3,7 +3,7 @@
 
 #define MIN_LENGTH 80
 
-void reset_line(char *line);
+void reverse_string(char *line);
 void put_line(char *line);
 
 int main()
@@ -22,7 +22,7 @@ int main()
             {
                 put_line(line);
             }
-            reset_line(line);
+            reverse_string(line);
             length = 0;
             continue;
         }
@@ -46,7 +46,7 @@ int main()
     return 0;
 }
 
-void reset_line(char *line)
+void reverse_string(char *line)
 {
     memset(line, 0, MIN_LENGTH + 1);
 }
