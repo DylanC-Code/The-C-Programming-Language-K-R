@@ -34,5 +34,23 @@
 1-6.o: 1-6.c
 	gcc -c 1-6.c
 
+1-7: 1-7.exe
+	./1-7.exe
+
+1-7.exe: 1-7.o
+	gcc -o 1-7.exe 1-7.o
+
+1-7.o: 1-7.c
+	gcc -c 1-7.c
+
+1-8: 1-8.exe
+	./1-8.exe
+
+1-8.exe: 1-8.o
+	gcc -o 1-8.exe 1-8.o
+
+1-8.o: 1-8.c
+	gcc -c 1-8.c
+
 clean:
 	rm *.exe *.o

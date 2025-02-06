@@ -2,11 +2,17 @@
 /* copy input to output; 2nd version */
 int main()
 {
-    printf("Press enter to see if a char equal to EOF.\n");
+    printf("Press enter to see if a char equal to EOF or CTRL+D to generate an EOF character.\n");
 
     int c = getchar();
     int expression = getchar() != EOF;
 
-    printf("(char '%d' != EOF) is equal to %d.\n", c, expression);
+    while (c != EOF)
+    {
+        printf("char '%d' != EOF\n", c);
+        c = getchar();
+    }
+
+    printf("EOF has been pressed.\n");
     return 0;
 }
