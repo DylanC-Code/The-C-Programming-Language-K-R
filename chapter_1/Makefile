@@ -61,5 +61,14 @@
 1-9.o: 1-9.c
 	gcc -c 1-9.c
 
+1-10: 1-10.exe
+	./1-10.exe
+
+1-10.exe: 1-10.o
+	gcc -o 1-10.exe 1-10.o
+
+1-10.o: 1-10.c
+	gcc -c 1-10.c
+
 clean:
 	rm *.exe *.o
